@@ -8,13 +8,15 @@ import javafx.stage.Stage;
 
 public class View {
 	
-	private Model model;
+	protected Model model;
 	private Stage stage;
 	protected Label lblNumber;
 	protected Button btnClick;
 	
 
 	public View(Stage stage, Model model) {
+		
+		try {
 		this.stage = stage;
 		this.model = model;
 		stage.setTitle("Button Click!");
@@ -22,16 +24,22 @@ public class View {
 		GridPane pane = new GridPane();
 		lblNumber = new Label();
 		lblNumber.setText(Integer.toString(model.getValue()));
-		pane.add(btnClick, 0, 0);
+		pane.add(lblNumber, 0, 0);
+		//pane.add(btnClick, 0, 1);
 		
 		btnClick = new Button();
 		btnClick.setText("Click me!");
 		pane.add(btnClick, 0, 1);
 		
 		Scene scene = new Scene(pane);
-		scene.getStylesheets().add(
-		getClass().getResource("ButtonClickMVC.css").toExternalForm());
-		stage.setScene(scene);;		
+		//scene.getStylesheets().add(
+		//getClass().getResource("ButtonClickMVC.css").toExternalForm());
+		stage.setScene(scene);
+		}
+		
+		catch (Exception e) {
+			System.out.println("Fehler bei der Erstellung des View-Objektes!");
+		}
 	}
 	
 	public void start() {

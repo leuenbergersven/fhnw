@@ -9,19 +9,13 @@ public class Controller {
 	 protected Controller(Model model, View view) {
 		 this.model = model;
 		 this.view = view;
+		 
+		 view.btnClick.setOnAction((event) -> {
+			 model.incrementValue();
+			 String newText = Integer.toString(model.getValue());
+			 view.lblNumber.setText(newText);
+		 });	
+		 
 	 }
-	 
-	 view.btnClick.setOnAction((event) -> {
-		 model.incrementValue();
-		 String newText = Integer.toString(model.getValue());
-		 view.lblNumber.setText(newText);
-	 });	
-	 
-	/* view.btnClick.setOnAction(new EventHandler<ActionEvent>() {
-		 public void handle(ActionEvent event) {
-		 model.incrementValue();
-		 String newText = Integer.toString(model.getValue());
-		 view.lblNumber.setText(newText);
-		 }
-	 });	*/
+	
 }

@@ -12,13 +12,11 @@ public class Driver extends Application {
 
 	//main-method
 	public static void main(String[] args) {
-		System.out.println("Hello World!");
-
+		launch(args);
 	}
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		
 		model = new Model();
 		view = new View(primaryStage, model);
 		controller = new Controller(model, view);
