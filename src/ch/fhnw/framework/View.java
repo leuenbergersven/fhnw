@@ -1,5 +1,7 @@
 package ch.fhnw.framework;
 
+import java.util.logging.Logger;
+
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -15,6 +17,8 @@ public class View {
 	
 
 	public View(Stage stage, Model model) {
+		
+		Logger log = Logger.getLogger(Driver.LOGGER_NAME);
 		
 		try {
 		this.stage = stage;

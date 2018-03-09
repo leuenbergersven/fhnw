@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-03-09T16:29:31</date>
+  <millis>1520609371755</millis>
+  <sequence>0</sequence>
+  <logger>Driver</logger>
+  <level>INFO</level>
+  <class>ch.fhnw.framework.Model</class>
+  <method>&lt;init&gt;</method>
+  <thread>12</thread>
+  <message>Model-Objekt erfolgreich generiert</message>
+</record>
+<record>
+  <date>2018-03-09T16:29:31</date>
+  <millis>1520609371887</millis>
+  <sequence>1</sequence>
+  <logger>Driver</logger>
+  <level>INFO</level>
+  <class>ch.fhnw.framework.Model</class>
+  <method>getValue</method>
+  <thread>12</thread>
+  <message>Wert zurückgegeben</message>
+</record>
+<record>
+  <date>2018-03-09T16:29:32</date>
+  <millis>1520609372333</millis>
+  <sequence>2</sequence>
+  <logger>Driver</logger>
+  <level>INFO</level>
+  <class>ch.fhnw.framework.Driver</class>
+  <method>start</method>
+  <thread>12</thread>
+  <message>Startmethode erfolgreich aufgerufen!</message>
+</record>
+<record>
+  <date>2018-03-09T16:29:33</date>
+  <millis>1520609373629</millis>
+  <sequence>3</sequence>
+  <logger>Driver</logger>
+  <level>INFO</level>
+  <class>ch.fhnw.framework.Model</class>
+  <method>incrementValue</method>
+  <thread>12</thread>
+  <message>Wert erhöht</message>
+</record>
+<record>
+  <date>2018-03-09T16:29:33</date>
+  <millis>1520609373630</millis>
+  <sequence>4</sequence>
+  <logger>Driver</logger>
+  <level>INFO</level>
+  <class>ch.fhnw.framework.Model</class>
+  <method>getValue</method>
+  <thread>12</thread>
+  <message>Wert zurückgegeben</message>
+</record>
+<record>
+  <date>2018-03-09T16:29:33</date>
+  <millis>1520609373764</millis>
+  <sequence>5</sequence>
+  <logger>Driver</logger>
+  <level>INFO</level>
+  <class>ch.fhnw.framework.Model</class>
+  <method>incrementValue</method>
+  <thread>12</thread>
+  <message>Wert erhöht</message>
+</record>
+<record>
+  <date>2018-03-09T16:29:33</date>
+  <millis>1520609373766</millis>
+  <sequence>6</sequence>
+  <logger>Driver</logger>
+  <level>INFO</level>
+  <class>ch.fhnw.framework.Model</class>
+  <method>getValue</method>
+  <thread>12</thread>
+  <message>Wert zurückgegeben</message>
+</record>
+<record>
+  <date>2018-03-09T16:29:33</date>
+  <millis>1520609373899</millis>
+  <sequence>7</sequence>
+  <logger>Driver</logger>
+  <level>INFO</level>
+  <class>ch.fhnw.framework.Model</class>
+  <method>incrementValue</method>
+  <thread>12</thread>
+  <message>Wert erhöht</message>
+</record>
+<record>
+  <date>2018-03-09T16:29:33</date>
+  <millis>1520609373901</millis>
+  <sequence>8</sequence>
+  <logger>Driver</logger>
+  <level>INFO</level>
+  <class>ch.fhnw.framework.Model</class>
+  <method>getValue</method>
+  <thread>12</thread>
+  <message>Wert zurückgegeben</message>
+</record>
+<record>
+  <date>2018-03-09T16:29:34</date>
+  <millis>1520609374027</millis>
+  <sequence>9</sequence>
+  <logger>Driver</logger>
+  <level>INFO</level>
+  <class>ch.fhnw.framework.Model</class>
+  <method>incrementValue</method>
+  <thread>12</thread>
+  <message>Wert erhöht</message>
+</record>
+<record>
+  <date>2018-03-09T16:29:34</date>
+  <millis>1520609374029</millis>
+  <sequence>10</sequence>
+  <logger>Driver</logger>
+  <level>INFO</level>
+  <class>ch.fhnw.framework.Model</class>
+  <method>getValue</method>
+  <thread>12</thread>
+  <message>Wert zurückgegeben</message>
+</record>
+<record>
+  <date>2018-03-09T16:29:34</date>
+  <millis>1520609374155</millis>
+  <sequence>11</sequence>
+  <logger>Driver</logger>
+  <level>INFO</level>
+  <class>ch.fhnw.framework.Model</class>
+  <method>incrementValue</method>
+  <thread>12</thread>
+  <message>Wert erhöht</message>
+</record>
+<record>
+  <date>2018-03-09T16:29:34</date>
+  <millis>1520609374157</millis>
+  <sequence>12</sequence>
+  <logger>Driver</logger>
+  <level>INFO</level>
+  <class>ch.fhnw.framework.Model</class>
+  <method>getValue</method>
+  <thread>12</thread>
+  <message>Wert zurückgegeben</message>
+</record>
+<record>
+  <date>2018-03-09T16:29:34</date>
+  <millis>1520609374300</millis>
+  <sequence>13</sequence>
+  <logger>Driver</logger>
+  <level>INFO</level>
+  <class>ch.fhnw.framework.Model</class>
+  <method>incrementValue</method>
+  <thread>12</thread>
+  <message>Wert erhöht</message>
+</record>
+<record>
+  <date>2018-03-09T16:29:34</date>
+  <millis>1520609374302</millis>
+  <sequence>14</sequence>
+  <logger>Driver</logger>
+  <level>INFO</level>
+  <class>ch.fhnw.framework.Model</class>
+  <method>getValue</method>
+  <thread>12</thread>
+  <message>Wert zurückgegeben</message>
+</record>
+<record>
+  <date>2018-03-09T16:31:02</date>
+  <millis>1520609462730</millis>
+  <sequence>15</sequence>
+  <logger>Driver</logger>
+  <level>INFO</level>
+  <class>ch.fhnw.framework.Driver</class>
+  <method>stop</method>
+  <thread>12</thread>
+  <message>Fenster geschlossen</message>
+</record>
+</log>
