@@ -21,19 +21,17 @@ public class Driver extends Application {
 	private String LOGGER_DESTINATION = new String("/Users/sven/Desktop/log/");
 	private Logger log = null;
 	
-	
 	//main-method
-	public static void main(String[] args) {	
-		
+	public static void main(String[] args) {			
 		launch(args);
 	}
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		
-		// Add a file handler: put rotating files in the tmp directory
+
+		//filehandler erstellen, wecher die logs in eine datei speichert
 		try {
-		FileHandler logHandler = new FileHandler(LOGGER_DESTINATION+LOGGER_NAME +".log");
+		FileHandler logHandler = new FileHandler(LOGGER_DESTINATION + LOGGER_NAME +".log");
 		log = Logger.getLogger(LOGGER_NAME);
 		log.setLevel(Level.INFO);
 		log.addHandler(logHandler);
@@ -42,6 +40,7 @@ public class Driver extends Application {
 		+ e.toString());
 		}
 		
+		//objekte generieren mvc
 		model = new Model();
 		view = new View(primaryStage, model);
 		controller = new Controller(model, view);
@@ -49,6 +48,7 @@ public class Driver extends Application {
 		log.info("Startmethode erfolgreich aufgerufen!");
 	}
 	
+	//fenster wird geschlossen
 	public void stop() {
 		if (view != null)
 			view.stop();
