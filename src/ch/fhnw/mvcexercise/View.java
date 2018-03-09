@@ -1,9 +1,16 @@
-package ch.fhnw.mvcexample;
+package ch.fhnw.mvcexercise;
+
+import java.util.logging.Logger;
+
+import javax.swing.JTextField;
 
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class View {
@@ -11,7 +18,8 @@ public class View {
 	protected Model model;
 	private Stage stage;
 	protected Label lblNumber;
-	protected Button btnClick;
+	protected Button btnGo;
+	protected TextField tf = new TextField();
 	
 
 	public View(Stage stage, Model model) {
@@ -19,21 +27,28 @@ public class View {
 		try {
 		this.stage = stage;
 		this.model = model;
-		stage.setTitle("Button Click!");
+		stage.setTitle("Adress Checker");
 		
-		GridPane pane = new GridPane();
+		BorderPane pane = new BorderPane();
 		lblNumber = new Label();
 		lblNumber.setText(Integer.toString(model.getValue()));
-		pane.add(lblNumber, 0, 0);
+		pane.setTop(lblNumber);
+
+
+		//textfeld für IP eingabe
+		pane.setCenter(tf);
 		
-		btnClick = new Button();
-		btnClick.setText("Click me!");
-		pane.add(btnClick, 0, 1);
+		btnGo = new Button();
+		btnGo.setText("Click me!");
+		pane.setBottom(btnGo);
 		
 		Scene scene = new Scene(pane);
 		//scene.getStylesheets().add(
 		//getClass().getResource("ButtonClickMVC.css").toExternalForm());
 		stage.setScene(scene);
+		
+		
+		Logger loggerView = Logger.getLogger(this.getClass().getName());
 		}
 		
 		catch (Exception e) {

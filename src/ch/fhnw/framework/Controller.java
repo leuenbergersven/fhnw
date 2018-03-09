@@ -1,4 +1,4 @@
-package ch.fhnw.mvcexample;
+package ch.fhnw.framework;
 
 import javafx.event.ActionEvent;
 

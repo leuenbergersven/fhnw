@@ -1,8 +1,9 @@
-package ch.fhnw.mvcexample;
+package ch.fhnw.loginchecker;
 
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
@@ -10,25 +11,29 @@ public class View {
 	
 	protected Model model;
 	private Stage stage;
-	protected Label lblNumber;
-	protected Button btnClick;
+	protected Label label = new Label("Bitte geben Sie Ihre Logindaten ein!");
+	protected Button btnCheck;
+	protected TextField username = new TextField();
+	protected TextField password = new TextField();
+	
 	
 
 	public View(Stage stage, Model model) {
-		
 		try {
 		this.stage = stage;
 		this.model = model;
-		stage.setTitle("Button Click!");
+		stage.setTitle("Login Checker!");
 		
 		GridPane pane = new GridPane();
-		lblNumber = new Label();
-		lblNumber.setText(Integer.toString(model.getValue()));
-		pane.add(lblNumber, 0, 0);
+		pane.add(label, 0, 0);
 		
-		btnClick = new Button();
-		btnClick.setText("Click me!");
-		pane.add(btnClick, 0, 1);
+		btnCheck = new Button();
+		btnCheck.setText("Check");
+		pane.add(btnCheck, 10, 10);
+		
+		//add textfields
+		pane.add(username, 5, 5);
+		pane.add(password, 10, 20);
 		
 		Scene scene = new Scene(pane);
 		//scene.getStylesheets().add(

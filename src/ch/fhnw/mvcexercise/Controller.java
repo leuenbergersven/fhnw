@@ -1,4 +1,6 @@
-package ch.fhnw.mvcexample;
+package ch.fhnw.mvcexercise;
+
+import java.util.logging.Logger;
 
 import javafx.event.ActionEvent;
 
@@ -10,7 +12,9 @@ public class Controller {
 		 this.model = model;
 		 this.view = view;
 		 
-		 view.btnClick.setOnAction((event) -> {
+		 Logger loggerController = Logger.getLogger(this.getClass().getName());
+		 
+		 view.btnGo.setOnAction((event) -> {
 			 model.incrementValue();
 			 String newText = Integer.toString(model.getValue());
 			 view.lblNumber.setText(newText);
