@@ -18,7 +18,7 @@ public class Controller {
 			 String newText = Integer.toString(model.getValue());
 			 view.lblNumber.setText(newText);
 		 });	
-
+		 
 	 }
 	
 }
